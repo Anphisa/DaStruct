@@ -1,0 +1,306 @@
+<Project>
+  <Name>DaStruct</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Class diagram</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>CentralExecutive</Name>
+        <Access>Public</Access>
+        <Location left="748" top="232" />
+        <Size width="180" height="332" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public Difficulty difficulty</Member>
+        <Member type="Field">public Memory memory</Member>
+        <Member type="Field">public list premises</Member>
+        <Member type="Field">public list conclusions</Member>
+        <Member type="Field">public str insert_type</Member>
+        <Member type="Field">public str merge_type</Member>
+        <Member type="Field">public int nested_supermodels</Member>
+        <Member type="Field">public int limits_for_data_structures</Member>
+        <Member type="Field">public str activation_function</Member>
+        <Member type="Method">public void execute()</Member>
+        <Member type="Method">public void premise_to_memory()</Member>
+        <Member type="Method">public void create_new_model()</Member>
+        <Member type="Method">public void insert_into_model()</Member>
+        <Member type="Method">public void merge_two_models()</Member>
+        <Member type="Method">public Bool evaluate_conclusion()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Difficulty</Name>
+        <Access>Public</Access>
+        <Location left="1019" top="232" />
+        <Size width="198" height="400" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public int focus_move_ops</Member>
+        <Member type="Field">public int focus_move_distance</Member>
+        <Member type="Field">public int write_ops</Member>
+        <Member type="Field">public int insert_ops</Member>
+        <Member type="Field">public int annotation_ops</Member>
+        <Member type="Field">public int merge_ops</Member>
+        <Member type="Field">public int grouping_ops</Member>
+        <Member type="Field">public int grouping_size</Member>
+        <Member type="Field">public int model_count</Member>
+        <Member type="Field">public int del_model_count</Member>
+        <Member type="Field">public int supermodels_created</Member>
+        <Member type="Field">public int supermodels_accessed</Member>
+        <Member type="Field">public int premise_direction_changes</Member>
+        <Member type="Field">public int focus_direction_changes</Member>
+        <Member type="Field">public int focus_key_distance</Member>
+        <Member type="Field">public int linked_list_followed_pointers</Member>
+        <Member type="Field">public int model_attention_changes</Member>
+        <Member type="Field">public int graph_amount_relationships</Member>
+        <Member type="Field">public int BST_depth</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Parser</Name>
+        <Access>Public</Access>
+        <Location left="456" top="232" />
+        <Size width="179" height="168" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public str first_token</Member>
+        <Member type="Field">public str relation</Member>
+        <Member type="Field">public str second_token</Member>
+        <Member type="Field">public str focus</Member>
+        <Member type="Method">public void parse()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Memory</Name>
+        <Access>Public</Access>
+        <Location left="456" top="431" />
+        <Size width="179" height="199" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public int models</Member>
+        <Member type="Field">public list supermodels</Member>
+        <Member type="Field">public str activation_function</Member>
+        <Member type="Method">public void insert()</Member>
+        <Member type="Method">public void search()</Member>
+        <Member type="Method">public void remove()</Member>
+        <Member type="Method">public void propagate_activation()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Comment">
+        <Text>Receives:
+- parameters.json for the configuration of data structures and methods
+- a text file containing premises and conclusions</Text>
+        <Location left="748" top="118" />
+        <Size width="160" height="105" />
+      </Entity>
+      <Entity type="Class">
+        <Name>DataStructure</Name>
+        <Access>Public</Access>
+        <Location left="748" top="688" />
+        <Size width="180" height="230" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public different focus</Member>
+        <Member type="Method">public void insert_token()</Member>
+        <Member type="Method">public void forget_token()</Member>
+        <Member type="Method">public void annotate_token()</Member>
+        <Member type="Method">public void find()</Member>
+        <Member type="Method">public void merge()</Member>
+        <Member type="Method">public void evaluate_conclusion()</Member>
+        <Member type="Method">public void variate_model()</Member>
+        <Member type="Method">public void generate_relation()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>InfiniteList</Name>
+        <Access>Public</Access>
+        <Location left="442" top="981" />
+        <Size width="162" height="94" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public nested_lists content</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>BinarySearchTree</Name>
+        <Access>Public</Access>
+        <Location left="654" top="981" />
+        <Size width="162" height="213" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public BinarySearchTree root</Member>
+        <Member type="Field">public BinarySearchTree left</Member>
+        <Member type="Field">public BinarySearchTree right</Member>
+        <Member type="Field">public BinarySearchTree above</Member>
+        <Member type="Field">public BinarySearchTree below</Member>
+        <Member type="Field">public int depth</Member>
+        <Member type="Field">public str token</Member>
+        <Member type="Field">public float key</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Graph</Name>
+        <Access>Public</Access>
+        <Location left="856" top="981" />
+        <Size width="162" height="94" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public matrix content</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>LinkedList</Name>
+        <Access>Public</Access>
+        <Location left="1055" top="981" />
+        <Size width="162" height="94" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public list content</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>BoundedList</Name>
+        <Access>Public</Access>
+        <Location left="442" top="1126" />
+        <Size width="162" height="94" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public int limit</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>BinarySearchTreeLimitedDepth</Name>
+        <Access>Public</Access>
+        <Location left="388" top="1318" />
+        <Size width="212" height="94" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public int limit</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>BinarySearchTreeRandomTree</Name>
+        <Access>Public</Access>
+        <Location left="619" top="1318" />
+        <Size width="216" height="77" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>BinarySearchTreeTrivial</Name>
+        <Access>Public</Access>
+        <Location left="856" top="1318" />
+        <Size width="216" height="77" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>LinkedListNode</Name>
+        <Access>Public</Access>
+        <Location left="1055" top="1114" />
+        <Size width="186" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public str token</Member>
+        <Member type="Field">public LinkedListNode pointing_to</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Dependency" first="0" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>660</X>
+          <Y>316</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Dependency" first="0" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="0" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="0" second="5">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="6" second="5">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>528</X>
+          <Y>926</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="10" second="6">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>528</X>
+          <Y>1101</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="7" second="5">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>696</X>
+          <Y>956</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="11" second="7">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>701</X>
+          <Y>1219</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="12" second="7">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>701</X>
+          <Y>1220</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="13" second="7">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>701</X>
+          <Y>1220</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Dependency" first="9" second="14">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1118</X>
+          <Y>1100</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1118</X>
+          <Y>1089</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="9" second="5">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1118</X>
+          <Y>946</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="8" second="5">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>976</X>
+          <Y>956</Y>
+        </BendPoint>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>

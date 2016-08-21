@@ -1,0 +1,4 @@
+P: A right B
+P: B right C
+P: C right D
+C: A right D

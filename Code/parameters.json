@@ -1,0 +1,1 @@
+{"BST_depth_limit": 10, "verbose": 0, "merge_type": "integrate", "activation_function": "(lambda x: 2 if x > 2 else 3)(x)", "data_structure": "Graph", "insert_type": "ff", "nested_supermodels": 10, "filename": "./experimental_data/Combined_data/comparison1-3prem/comparison1-3prem_14.pf", "bounded_list_size_limit": 10, "to_file": 0, "neighborhood_graph_removal_cap": 0}

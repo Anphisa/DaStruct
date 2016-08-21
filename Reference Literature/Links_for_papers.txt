@@ -1,0 +1,9 @@
+Where to find certain papers:
+
+Geoffrey P. Goodwin and P. N. Johnson-Laird - Reasoning About Relations: http://mentalmodels.princeton.edu/papers/2005reasoningrelations.pdf
+Georg Jahn, Markus Knauff and P. N. Johnson-Laird - Preferred mental models in reasoning about spatial relations: http://mentalmodels.princeton.edu/papers/2007preferredmodels.pdf
+Markus Knauff, Leandra Bucher, Antje Krumnack and Jelica Nejasmic - Spatial belief revision: https://www.uni-giessen.de/fbz/fb06/psychologie/abt/kognition/publikation/Aufsatz_JCP
+Antje Krumnack, Leandra Bucher, Jelica Nejasmic, Bernhard Nebel and Markus Knauff - A model for relational reasoning as verbal reasoning: https://www.uni-giessen.de/fbz/fb06/psychologie/abt/kognition/dateien/krumnack_2011
+Marco Ragni and Markus Knauff - A Theory and a Computational Model of Spatial Reasoning With Preferred Mental Models: https://www.uni-giessen.de/fbz/fb06/psychologie/abt/kognition/dateien/mentalmodels
+Reinhold Rauh, Cornelius Hagen, Markus Knauff, Thomas Kuss, Christoph Schlieder and Gerhard Strube - Preferred and Alternative Mental Models in Spatial Reasoning: http://www.tandfonline.com/doi/abs/10.1080/13875868.2005.9683805?journalCode=hscc20
+Holger Schultheis, Sven Bertel and Thomas Barkowsky - Modeling Mental Spatial Reasoning About Cardinal Directions: http://onlinelibrary.wiley.com/doi/10.1111/cogs.12125/abstract

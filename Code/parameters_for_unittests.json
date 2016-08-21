@@ -1,0 +1,1 @@
+{"insert_type": "fff", "BST_depth_limit": 4, "to_file": 1, "verbose": 0, "merge_type": "integrate", "bounded_list_size_limit": 10, "neighborhood_graph_removal_cap": 4, "data_structure": "InfiniteList", "nested_supermodels": 4, "filename": "./experimental_data/comparison1-3prem_trial/comparison1-3prem_14.pf", "activation_function": ""}

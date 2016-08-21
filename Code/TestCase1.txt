@@ -1,0 +1,4 @@
+P: A left B
+P: B left C
+P: D above A
+C: A left D
