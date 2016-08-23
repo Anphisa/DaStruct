@@ -1,7 +1,13 @@
 \documentclass{article}
+\usepackage{datetime}
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman,english]{babel}
+\newdate{date}{24}{08}{2016}
+\date{\displaydate{date}}
 \pagestyle{empty}
+\newdateformat{UKvardate}{%
+\THEDAY\ \monthname[\THEMONTH], \THEYEAR}
+\UKvardate
 
 \begin{document}
 \begin{titlepage}
@@ -24,7 +30,7 @@
      Lehrstuhl Grundlagen der künstlichen Intelligenz\\
      Albert-Ludwigs-Universität Freiburg\\
      Germany\\
-     Submitted \today
+     Submitted \displaydate{date}
         
         
     % Eidesstattliche Erklärung
